@@ -1,0 +1,16 @@
+{
+  "name": "event-registration-system",
+  "version": "1.0.0",
+  "description": "DecodeLabs Event Registration System backend API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

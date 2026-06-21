@@ -1,0 +1,324 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #1f2937;
+  background: #f8fafc;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: #f8fafc;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button, input, select {
+  font: inherit;
+}
+
+.container {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.brand {
+  font-weight: 700;
+  color: #1d4ed8;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #475569;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  color: #1d4ed8;
+}
+
+.section {
+  padding: 3rem 0;
+}
+
+.section-highlight {
+  background: linear-gradient(180deg, rgba(29,78,216,0.08), #ffffff 80%);
+}
+
+.hero {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.eyebrow {
+  color: #2563eb;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  color: #0f172a;
+}
+
+h1 {
+  font-size: clamp(2rem, 2.8vw, 3rem);
+  line-height: 1.05;
+}
+
+p {
+  margin-top: 1rem;
+  color: #475569;
+}
+
+.hero-actions,
+.form-card .hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.95rem 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button-primary {
+  color: #ffffff;
+  background: #1d4ed8;
+}
+
+.button-secondary {
+  color: #1d4ed8;
+  background: #e0e7ff;
+}
+
+.cards-overview {
+  gap: 1.5rem;
+}
+
+.card,
+.event-card,
+.event-detail-card,
+.form-card,
+.success-card,
+.notfound-panel {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  padding: 1.75rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.event-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.event-card h3 {
+  font-size: 1.25rem;
+}
+
+.event-card p,
+.event-card span {
+  color: #475569;
+}
+
+.event-card .meta {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.tag {
+  color: #1d4ed8;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.event-detail-card {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.event-detail-card h2 {
+  font-size: 2rem;
+}
+
+.event-detail-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.detail-item {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.detail-item strong {
+  color: #0f172a;
+}
+
+.search-form {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.search-form input,
+.search-form select,
+form input,
+form select {
+  width: 100%;
+  min-width: 0;
+  border-radius: 0.75rem;
+  border: 1px solid #cbd5e1;
+  padding: 0.9rem 1rem;
+  color: #0f172a;
+  background: #ffffff;
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-error,
+.empty-state,
+.loading {
+  color: #b91c1c;
+  margin-top: 1rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.top-controls {
+  padding-top: 2rem;
+}
+
+.form-section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.form-card {
+  max-width: 540px;
+}
+
+.success-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.success-card {
+  text-align: center;
+}
+
+.site-footer {
+  padding: 1.5rem 0;
+}
+
+.site-footer p {
+  margin: 0;
+  color: #64748b;
+}
+
+@media (max-width: 900px) {
+  .hero-grid,
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .search-form {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
